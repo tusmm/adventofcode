@@ -10,7 +10,6 @@ with open("input1.txt", 'r') as f:
         if line == '\n':
             if mostCalories < elfCalorie:
                 mostCalories = elfCalorie
-                elfCalorie = 0
             elfCalorie = 0
         else:
             elfCalorie += int(line.strip())
