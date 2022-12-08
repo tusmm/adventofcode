@@ -11,9 +11,8 @@ with open("input.txt", "r") as f:
             for i in temp2:
                 num.append(i)
 
-        if int(num[0]) <= int(num[2]) and int(num[1]) >= int(num[3]):
+        if int(num[0]) <= int(num[2]) and int(num[1]) >= int(num[2]):
             total += 1
-        elif int(num[2]) <= int(num[0]) and int(num[3]) >= int(num[1]):
+        elif int(num[2]) <= int(num[0]) and int(num[3]) >= int(num[0]):
             total += 1
-
 print(total)
